@@ -4,7 +4,7 @@ import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 import { getFirestore, setDoc, doc, deleteDoc, collection, getDocs } from 'firebase/firestore';
 import { initializeApp } from 'firebase/app';
 
-// Configuração do Firebase
+// Config do firebase
 const firebaseConfig = {
   apiKey: "AIzaSyAXZ9cv0SxLiahjdOjArRtlAO_O1tEa5Bk",
   authDomain: "aulaweb-f4d36.firebaseapp.com",
@@ -14,7 +14,7 @@ const firebaseConfig = {
   appId: "1:792554501068:web:90f6950d8c4fc0ab962369"
 };
 
-// Inicialize o Firebase
+// Inicializar Firebase
 initializeApp(firebaseConfig);
 
 const Cadastro = () => {
@@ -31,7 +31,7 @@ const Cadastro = () => {
   const db = getFirestore();
 
   useEffect(() => {
-    // Função para carregar a lista de produtos
+    // Load da lista de produtos
     const carregarProdutos = async () => {
       try {
         const querySnapshot = await getDocs(collection(db, 'produtos'));
@@ -83,7 +83,7 @@ const Cadastro = () => {
       setMensagem('Produto cadastrado com sucesso!');
       setTimeout(() => setMensagem(''), 5000);
 
-      // Atualiza a lista de produtos
+      // Update da lista
       const querySnapshot = await getDocs(collection(db, 'produtos'));
       const listaProdutos = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
       setProdutos(listaProdutos);
@@ -108,12 +108,11 @@ const Cadastro = () => {
       setMensagem('Produto atualizado com sucesso!');
       setTimeout(() => setMensagem(''), 5000);
 
-      // Atualiza a lista de produtos
       const querySnapshot = await getDocs(collection(db, 'produtos'));
       const listaProdutos = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
       setProdutos(listaProdutos);
 
-      // Limpa o produto editando
+      // Limpar campos do produto
       setProdutoEditando(null);
       setFormData({
         nome: '',
@@ -132,7 +131,6 @@ const Cadastro = () => {
       setMensagem('Produto deletado com sucesso!');
       setTimeout(() => setMensagem(''), 5000);
 
-      // Atualiza a lista de produtos
       const querySnapshot = await getDocs(collection(db, 'produtos'));
       const listaProdutos = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
       setProdutos(listaProdutos);

@@ -1,7 +1,6 @@
-// src/components/Login.js
 import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../firebase.js'; // Importe o Firebase auth
+import { auth } from '../firebase.js';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -15,10 +14,10 @@ const Login = () => {
       await signInWithEmailAndPassword(auth, email, password);
       console.log('Login realizado com sucesso!');
       
-      // Armazene o e-mail do usuário no localStorage
+      // Seta o e-mail do usuário no localStorage
       localStorage.setItem('userEmail', email);
       
-      // Redirecione para home.html
+      // Redirecionar para home
       window.location.href = '/';
     } catch (error) {
       console.error('Erro no login:', error.message);

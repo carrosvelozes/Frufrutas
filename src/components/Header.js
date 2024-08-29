@@ -1,4 +1,3 @@
-// src/components/Header.js
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
@@ -22,7 +21,7 @@ const Header = () => {
     try {
       await signOut(auth);
       console.log('Logout realizado com sucesso!');
-      navigate('/login'); // Redireciona para a página de login após o logout
+      navigate('/login'); // Redireciona para o login depois do logout
     } catch (error) {
       console.error('Erro no logout:', error.message);
     }

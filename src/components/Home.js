@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/styles.css';
 import { auth, db, collection, getDocs, doc, getDoc, setDoc } from '../firebase';
-import apresentacaoIMG1 from '../img/apresentacao.jpg'; // Altere conforme necessário
-import apresentacaoIMG2 from '../img/login.jpg'; // Altere conforme necessário
+import apresentacaoIMG1 from '../img/apresentacao.jpg';
+import apresentacaoIMG2 from '../img/login.jpg';
 import loginIMG from '../img/login.jpg';
 
 const Home = () => {
@@ -55,12 +55,12 @@ const Home = () => {
     });
 
     carregarProdutos();
-    return () => unsubscribe(); // Limpeza do listener
+    return () => unsubscribe();
   }, [user]);
 
   useEffect(() => {
     const calcularTotal = () => {
-      const taxaEntrega = 13.00; // Taxa de entrega fixa
+      const taxaEntrega = 13.00; // Taxa de entrega 
       const total = carrinho.reduce((acc, item) => acc + item.preco, 0) + taxaEntrega;
       setTotalCarrinho(total);
     };
@@ -93,10 +93,10 @@ const Home = () => {
     }
 
     try {
-      // Aqui você pode salvar a compra no banco de dados, se necessário
+      // Salvar compra no banco (nao finalizado)
       alert(`Compra finalizada! Total a pagar: R$ ${totalCarrinho.toFixed(2)}`);
 
-      // Limpar o carrinho no banco de dados
+      // Limpar o carrinho
       if (user) {
         await setDoc(doc(db, 'carrinhos', user.uid), { itens: [] });
       }

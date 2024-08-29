@@ -1,4 +1,3 @@
-// src/firebase.js
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore, collection, getDocs, doc, getDoc, setDoc } from 'firebase/firestore'; // Adicione setDoc aqui
