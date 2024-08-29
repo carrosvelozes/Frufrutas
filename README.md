@@ -48,9 +48,9 @@ Os administradores têm a capacidade de:
 
     O aplicativo estará disponível em [http://localhost:3000](http://localhost:3000).
 
-### Gerenciamento de Cadastro
+### Gerenciamento de Cadastro e Produtos
 
-Para gerenciar o cadastro e as funcionalidades administrativas, faça login com as seguintes credenciais:
+Para gerenciar o cadastro e produtos, faça login com as seguintes credenciais:
 
 - **E-mail:** admin@email.com
 - **Senha:** 123123
