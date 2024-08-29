@@ -4,7 +4,8 @@ Projeto realizado pelos alunos Leonardo Moraes e Lucas Carvalho, desenvolvido pa
 
 ## Sobre o Projeto
 
-![Tela Inicial](https://imgur.com/VeVrvBH)
+![Tela Inicial do E-commerce](https://i.imgur.com/VeVrvBH.png)
+
 
 https://imgur.com/VeVrvBH
 
