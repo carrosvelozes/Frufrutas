@@ -1,0 +1,191 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #FFC107;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.mensagem-sucesso {
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #388e3c; /* Cor ajustada para um tom mais escuro */
+}
+
+#btn-cadastro {
+    margin-top: auto;
+    background-color: #5ad1f2;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#btn-cadastro:hover {
+    background-color: #2b5460;
+}
+
+/* Estilo da lista de produtos */
+#lista-produtos ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#lista-produtos li {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(33.333% - 15px); /* Três itens por linha */
+    box-sizing: border-box;
+}
+
+#lista-produtos img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+#lista-produtos button {
+    margin: 5px;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#lista-produtos button:hover {
+    background-color: #388e3c; /* Cor ajustada para um tom mais escuro */
+}
+
+/* Responsividade */
+
+/* Tablets e Dispositivos Móveis (largura até 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+
+    .form-wrapper {
+        padding: 15px;
+    }
+
+    input,
+    button {
+        font-size: 1em;
+    }
+
+    #lista-produtos li {
+        width: calc(50% - 15px); /* Dois itens por linha */
+    }
+}
+
+/* Smartphones e Dispositivos Móveis (largura até 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .form-wrapper {
+        padding: 15px;
+    }
+
+    input,
+    button {
+        font-size: 0.9em;
+    }
+
+    #lista-produtos li {
+        width: calc(100% - 15px); /* Um item por linha */
+    }
+}
+
+/* Smartphones Pequenos (largura até 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+
+    .form-wrapper {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input,
+    button {
+        font-size: 0.8em;
+    }
+}
