@@ -4,6 +4,10 @@ Projeto realizado pelos alunos Leonardo Moraes e Lucas Carvalho, desenvolvido pa
 
 ## Sobre o Projeto
 
+![Tela Inicial](https://imgur.com/VeVrvBH)
+
+https://imgur.com/VeVrvBH
+
 O projeto é um e-commerce simples focado em **cestas orgânicas**, onde os usuários podem:
 
 - Comprar frutas
