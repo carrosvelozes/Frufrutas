@@ -6,7 +6,7 @@ Projeto realizado pelos alunos Leonardo Moraes e Lucas Carvalho, desenvolvido pa
 
 ![Tela Inicial do E-commerce](https://i.imgur.com/VeVrvBH.png)
 
-O projeto é um e-commerce simples focado em **cestas orgânicas**, onde os usuários podem:
+O projeto é um loja simples focada em **cestas orgânicas**, onde os usuários podem:
 
 - Comprar frutas
 - Adicionar itens ao carrinho
