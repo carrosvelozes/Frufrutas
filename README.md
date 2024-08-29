@@ -55,7 +55,7 @@ Os administradores têm a capacidade de:
 Para gerenciar o cadastro e produtos, faça login com as seguintes credenciais:
 
 - **E-mail:** admin@email.com
-- **Senha:** 123123
+- **Senha:** admin123
 
 ## Scripts Disponíveis
 
