@@ -32,7 +32,7 @@ Os administradores têm a capacidade de:
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/carrosvelozes/frufrutas.git
+    git clone https://github.com/carrosvelozes/frufrutas
     cd repo
     ```
 
